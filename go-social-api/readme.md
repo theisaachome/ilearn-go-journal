@@ -10,4 +10,5 @@ go mod init github.com/theisaachome/social
 ## Project Structure
 
 ```sh
+go get 
 ```

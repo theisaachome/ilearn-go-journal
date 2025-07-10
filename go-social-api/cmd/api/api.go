@@ -18,10 +18,6 @@ type config struct {
 }
 
 func (app *application) mount() http.Handler {
-	// Here you would mount your routes, for example:
-	// mux.HandleFunc("/health", app.healthCheck)
-	// mux.HandleFunc("/users", app.getUsers)
-	// etc.
 	r := chi.NewRouter()
 	// Middleware for logging, recovering from panics, etc.
 	r.Use(middleware.RequestID)
