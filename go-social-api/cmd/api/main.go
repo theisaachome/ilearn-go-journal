@@ -4,12 +4,21 @@ import (
 	"log"
 
 	"github.com/theisaachome/social/internal/env"
+	"github.com/theisaachome/social/internal/store"
 )
 
 
 func main(){
 	cfg :=config{addr: env.GetString("ADDR", ":8080")}
-	app := &application{config: cfg}
+
+	store :=store.NewStorage(nil)
+
+	app := &application{
+		config: cfg,
+		store: store,
+	}
+
+
 	mux :=app.mount()
 	log.Fatal(app.run(mux))
 
