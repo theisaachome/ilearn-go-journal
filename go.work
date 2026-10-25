@@ -1,0 +1,9 @@
+go 1.27
+
+use (
+	go-by-example/array
+	go-interface
+	go-social-api
+	lets-go-further/greenlight
+	learn-to-code-go/modules
+)
