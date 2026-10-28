@@ -9,7 +9,7 @@ func main() {
 	fmt.Println("The sum is: ", y)
 }
 
-// func (r receiver) identifer(p parameters)(returns){code}
+// func (r receiver) identifier(p parameters)(returns){code}
 
 func sum(nums ...int) int {
 	fmt.Println(nums)
