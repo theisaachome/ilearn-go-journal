@@ -6,6 +6,7 @@ type Person struct {
 	firstName string
 }
 
+// Person struct receiver method
 func (p Person) Greet() {
 	fmt.Println("Hello, I'm " + p.firstName)
 }
