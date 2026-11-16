@@ -1,9 +1,10 @@
-go 1.27
+go 1.27.1
 
 use (
+	./go-ultimate-comprehensive-course/156-hands-on-63-test-in-go
 	go-by-example/array
 	go-interface
 	go-social-api
-	lets-go-further/greenlight
 	learn-to-code-go/modules
+	lets-go-further/greenlight
 )
